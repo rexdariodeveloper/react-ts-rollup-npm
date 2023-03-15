@@ -1,0 +1,17 @@
+.imj-card-container{
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    width: 350px;
+    align-items: center;
+    box-shadow: 7px 7px 20px #dedede;
+    padding: 20px;
+
+    h1{
+        font-size: calc(1rem + 1vw);
+    }
+
+    p{
+        font-size: calc(.3rem + 1vw);
+    }
+}
