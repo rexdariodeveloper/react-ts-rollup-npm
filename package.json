@@ -1,6 +1,6 @@
 {
   "name": "@rexdariodeveloper/react-ts-rollup-npm",
-  "version": "0.1.3",
+  "version": "0.1.11",
   "description": "Los componentes.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
