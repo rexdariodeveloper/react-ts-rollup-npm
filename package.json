@@ -1,11 +1,11 @@
 {
   "name": "@rexdariodeveloper/react-ts-rollup-npm",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "Los componentes.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
-    "storybook": "cross-env NODE_OPTIONS=--openssl-legacy-provider start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006",
     "storybook:export": "build-storybook"
   },
   "keywords": [],
@@ -29,6 +29,8 @@
     "html-webpack-plugin": "^5.5.0",
     "node-sass": "^8.0.0",
     "postcss-normalize": "^10.0.1",
+    "primeicons": "^6.0.1",
+    "primereact": "^9.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup": "^2.79.1",
