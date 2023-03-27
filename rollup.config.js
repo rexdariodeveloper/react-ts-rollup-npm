@@ -10,8 +10,14 @@ import { terser } from "rollup-plugin-terser";
 // import external from "rollup-plugin-peer-deps-external";
 import autoprefixer from 'autoprefixer';
 import postcssNormalize from "postcss-normalize";
+//import svgr from '@svgr/rollup';
+//import reactSvg from "rollup-plugin-react-svg";
+import image from '@rollup/plugin-image';
+//import alias from '@rollup/plugin-alias';
 
 const packageJson = require("./package.json");
+
+const path = require("path");
 
 export default [{
   //preserveModules: true,
@@ -46,6 +52,30 @@ export default [{
       use: ["sass"],
       // parser: "postcss-scss",
     }),
-    terser() // minifies generated bundles
+    terser(), // minifies generated bundles
+    //svgr()
+    // reactSvg({
+    //   // svgo options
+    //   svgo: {
+    //     plugins: [], // passed to svgo
+    //     multipass: true
+    //   },
+ 
+    //   // whether to output jsx
+    //   jsx: false,
+ 
+    //   // include: string
+    //   include: null,
+ 
+    //   // exclude: string
+    //   exclude: null
+    // })
+    // alias({
+    //   entries: {
+    //     "@src": path.resolve(__dirname, "./src")
+    //   }
+    // }),
+    // svgr({ exportType: 'named', jsxRuntime: 'automatic' })
+    image()
   ],
 }];
